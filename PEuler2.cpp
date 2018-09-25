@@ -1,4 +1,4 @@
-//Project Euler  2
+//Project Euler  2 SUM AQUARE DIFFERENCE
 #include <iostream>
 #include <cmath>
 using namespace std;

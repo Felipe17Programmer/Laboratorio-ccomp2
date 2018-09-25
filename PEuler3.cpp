@@ -1,4 +1,4 @@
-//Project Euler  3
+//Project Euler  3 Special Pythagorean triplet
 #include <iostream>
 #include <math.h>
 
