@@ -59,10 +59,32 @@ int inversion(int array[],int lenght){
 		array[i]=array[lenght-1 -i];
 		array[lenght-1 -i]=aux2;
 	}
+	cout<<"\nOrden Inverso: ";
 	for(int i=0;i<lenght;i++){
     	cout<<array[i]<<" ";
     }
 	return 0;
+}
+
+int contP(int array[],int lenght){
+	int cont=0;
+	int j;
+	bool primo=true;
+	for(int i=0; i<lenght;i++){
+		bool primo=true;
+		for(j=2;j<array[i]-1;j++){
+			if(array[i]%j==0){
+				primo=false;
+				j=array[i];
+			}
+		}
+		if(primo==true){
+			cont++;
+		}
+	}
+	cout<<"\nCantidad de Primos: "<<cont<<endl;
+	
+	return 0;	
 }
 
 int main(){
@@ -80,7 +102,8 @@ int main(){
     cout<<"\nSuma es: "<<suma(array1,n)<<endl; 
  	cout<<"Mayor elemento es: "<<mayor(array1,n)<<endl;
  	ordenados(array1,n);
- 	//inversion(array1,n);
+ 	inversion(array1,n);
+ 	contP(array1,n);
     getch();
     return 0;
 }

@@ -27,20 +27,29 @@ int contarCaracter(char cadena[],char a){
 	return b;
 }
 
-bool esPalindromo(char cadena, int size){
-    for(int i = 0; i < size/2; i++)
-        if(cadena[i] != cadena[size-i-1]) 
-            return false;
-    return true;   
+bool palindr(char cadena[]){
+	string alreves;
+	int tamano=strten(cadena)-1;
+	for(int i=tamano-1;i>=0;i--){
+		alreves=alreves+cadena[i];
+	}
+	if(alreves == cadena){
+		return true;
+	}
+	else{
+		return false;
+	}
+
 }
 
+
 int main(){
-	char cad[]="hello";
+	char cad[]="ana";
 	
 	cout<<strten(cad)<<endl;
 	cout<<contarCaracter(cad,'l')<<endl;
-	cout<<esPalindromo(cad,6)<<endl;
+	cout<<palindr(cad)<<endl;
 	
-	
+	getch();
 	return 0;
 }
