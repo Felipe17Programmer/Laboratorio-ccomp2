@@ -18,7 +18,7 @@ int potenciaP(int *b, int *e){
 }
 
 bool bisiestoP(int *a){
-	return (!(*a%4)&&!(*a%100==0||*a%400==0));
+	return (!(*a%4)&&(*a%100==0||!(*a%400==0)));
 }
 int main(){
 	cout<<"TRABAJANDO CON PUNTEROS"<<endl;
