@@ -26,7 +26,7 @@ int mayor(const int array[], const int lenght){
 }
 
 int ordenados(int array[], int lenght){
-    int aux,i,j,min;
+    int aux,i,j,min,aux2;
     //Algoritmo de ordenamiento por seleccion
     for(i=0;i<lenght;i++){
     	min=i;
@@ -39,7 +39,6 @@ int ordenados(int array[], int lenght){
     	array[i]=array[min];
     	array[min]=aux;	
     }
-    
     
     cout<<"Orden Ascendente: ";
     for(i=0;i<lenght;i++){
@@ -54,38 +53,18 @@ int ordenados(int array[], int lenght){
 }
 
 int inversion(int array[],int lenght){
-	cout<<"\nOrden Inverso: ";
-	 for(int i=lenght-1;i>=0;i--){
+	int aux2;
+	for(int i=0;i<lenght/2;i++){
+		aux2=array[i];
+		array[i]=array[lenght-1 -i];
+		array[lenght-1 -i]=aux2;
+	}
+	for(int i=0;i<lenght;i++){
     	cout<<array[i]<<" ";
     }
 	return 0;
 }
 
-/*int contP(int array[],int lenght){
-    int n=lenght,cont=0,i,div,t=0,j=0,a[max],b[max];
-    
-	for(i=0; i<n;i++){
-	div=2;
-	while(div<a[i] && a[i]%div>0){ // Determinando si es primo
-	   div++;
-	}
-	  if(div==a[i]){           
-	       b[j++]=a[i];
-	       t++; //Contador para saber si encontró al menos un numero primo
-	       }
-	 }
-	 if(t>0){
-	    cout<<"\nLos numeros primos de su arreglo son:"<<endl;
-	    for(i=0;i<j;i++)
-	    cout<<b[i]<<" ";
-	    }
-	else{
-		cout<<"\nNo hay numeros primos en su arreglo";	
-	} 
-
-    return 0;
-}
-*/
 int main(){
     int array1[100],n;
     cout<<"Digite el numero de elemento que tendra el arreglo: ";
@@ -101,7 +80,7 @@ int main(){
     cout<<"\nSuma es: "<<suma(array1,n)<<endl; 
  	cout<<"Mayor elemento es: "<<mayor(array1,n)<<endl;
  	ordenados(array1,n);
- 	inversion(array1,n);
+ 	//inversion(array1,n);
     getch();
     return 0;
 }
