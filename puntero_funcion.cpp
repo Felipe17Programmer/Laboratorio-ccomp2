@@ -32,7 +32,7 @@ void algol1(int arr[],int n,bool (*fp)(int,int)){
 int main(){
 	
 	int arr[]={6,2,5,4,7,8,9,3};
-	algol1(arr,8,descend);
+	algol1(arr,8,ascend);
 	
 	getch();
 	return 0;
