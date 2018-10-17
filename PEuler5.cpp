@@ -2,21 +2,16 @@
 #include <iostream>
 using namespace std;
 
-int main (int argc, char* argv[])
+int main ()
 {
-	int v1 = 4000000, next = 0, i = 1;
+	int v1 = 4000000, v2=0, i=1;
 	long sum = 0;
-	do 
-	{
-		i += next;
-		
+	do {
+		i += v2;
 		if ((i < v1) && (i % 2 == 0)) sum += i;
-
-		next = i - next;
+		v2 = i - v2;
 	}
 	while (i < v1); 
-	
 	cout << "Suma:   " << sum << endl;
-	
 	return 0;
 }
