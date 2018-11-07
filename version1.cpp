@@ -26,6 +26,27 @@ void menu_eliminar();
 void gotoxy(int x,int y);
 int menu(const char* titulo, const char *opciones[], int n);
 
+class Archivo{
+	public:
+		Archivo(string texto){
+			this->texto=texto;
+		}
+		void escribir(string texto){
+			ofstream archivo;
+			archivo.open("Fichero.txt" ,ios::app); //abrimos el archivo en modo añadir texto
+			
+			if(archivo.fail()){
+				cout<<"No se pudo abrir el archivo";
+				exit(1);
+			}
+			archivo<<texto<<endl;
+			//archivo<<"Hola que tal?";
+			archivo.close(); //cerrramos el archivo
+		}
+	private:
+		string texto;
+};
+
 char getch2(){  //permite poder usar menu con el teclado
 	char c=0;
 	DWORD modo, contador;
@@ -86,7 +107,6 @@ void menu_principal(){
 				menu_ingresar();
 				break;
 			case 2:
-				system("cls");
 				lectura();
 				break;
 			case 3:
@@ -259,6 +279,7 @@ void escribir(string texto){
 }
 
 void lectura(){
+	bool repite=true;
 	ifstream archivo;  //if es de input o de lectura	
 	string texto;
 	
@@ -268,10 +289,16 @@ void lectura(){
 		cout<<"No se pudo abrir el archivo";
 		exit(1);
 	}
-	
-	while(!archivo.eof()){ //mientras no sea el final del arcivo
+		system("cls");
+		while(!archivo.eof()){ //mientras no sea el final del arcivo
 		getline(archivo,texto); //copiar todo del archivo en variable string
 		cout<<texto<<endl;
-	}
+		}
+		
+	
+		
+	
+	
 	archivo.close(); //cerramos el programa
+	
 }
