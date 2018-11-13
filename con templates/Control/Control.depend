@@ -85,9 +85,10 @@
 	"PolygonArray.h"
 	<iostream>
 
-1542109464 source:g:\laboratorio\con templates\control\main.cpp
+1542120592 source:g:\laboratorio\con templates\control\main.cpp
 	<iostream>
 	"Polygon.h"
+	"Rectagle.h"
 	"Triangle.h"
 	"Polygonarray.h"
 
@@ -97,7 +98,7 @@
 	"Polygon.h"
 	<iostream>
 
-1542116700 g:\laboratorio\con templates\control\include\polygonarray.h
+1542120362 g:\laboratorio\con templates\control\include\polygonarray.h
 	"Polygon.h"
 	<iostream>
 
@@ -105,7 +106,7 @@
 	"Polygon.h"
 	<iostream>
 
-1542116760 source:g:\laboratorio\con templates\control\src\polygonarray.cpp
+1542120982 source:g:\laboratorio\con templates\control\src\polygonarray.cpp
 	"PolygonArray.h"
 	<iostream>
 

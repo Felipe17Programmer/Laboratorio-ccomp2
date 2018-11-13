@@ -5,14 +5,14 @@ using namespace std;
 template <class T3>
 PolygonArray<T3>::PolygonArray()
 {
-    tamanio=0;
-    points = new Polygon<T3>[tamanio];
+    this->tamanio=0;
+    this->points = new Polygon<T3>[tamanio];
 }
 
 template <class T3>
-PolygonArray<T3>::PolygonArray(const Polygon<int> pts[], const T3 tamanio) {
+PolygonArray<T3>::PolygonArray(const Polygon<T3> pts[], const int tamanio) {
     this->tamanio = tamanio;
-    this->points = new Polygon<int> [tamanio];
+    this->points = new Polygon<T3> [tamanio];
     for(int i = 0; i < tamanio; i++)
         points[i] = pts[i];
 }
@@ -20,15 +20,15 @@ PolygonArray<T3>::PolygonArray(const Polygon<int> pts[], const T3 tamanio) {
 template <class T3>
 PolygonArray<T3>::PolygonArray(PolygonArray &o){
     this->tamanio = o.tamanio;
-    this->points = new Polygon<int> [tamanio];
+    this->points = new Polygon<T3> [tamanio];
     for(int i = 0; i < tamanio; i++)
         points[i] = o.points[i];
 }
 
 template <class T3>
-void PolygonArray<T3>::resize(T3 newSize) {
-	Polygon<int> *pts = new Polygon<int> [newSize];
-	T3 minsize = (newSize > tamanio) ? tamanio : newSize;
+void PolygonArray<T3>::resize(int newSize) {
+	Polygon<T3> *pts = new Polygon<T3> [newSize];
+	int minsize = (newSize > tamanio) ? tamanio : newSize;
     for(int i = 0; i < minsize; i++)
         pts[i] = points[i];
 	delete[] points;
@@ -43,12 +43,12 @@ void PolygonArray<T3>::print() {
 }
 
 template <class T3>
-void PolygonArray<T3>::push_back(const Polygon<int> &p){
+void PolygonArray<T3>::push_back(const Polygon<T3> &p){
 	resize(tamanio+1);
 	points[tamanio-1] = p;
 }
 template <class T3>
-void PolygonArray<T3>::insert(const T3 pos, const Polygon<int> &p) {
+void PolygonArray<T3>::insert(const int pos, const Polygon<T3> &p) {
 	resize(tamanio+1);
     for(int i = tamanio-1; i < pos; i--)
         points[i] = points[i-1];
@@ -56,8 +56,7 @@ void PolygonArray<T3>::insert(const T3 pos, const Polygon<int> &p) {
 }
 
 template <class T3>
-void PolygonArray<T3>::remove(const T3 pos) {
-
+void PolygonArray<T3>::remove(const int pos) {
             for(int i=0;i<tamanio;i++)
                 if(i==pos){
                 	while(i<tamanio){
@@ -76,7 +75,7 @@ void PolygonArray<T3>::clear() {
 }
 
 template <class T3>
-T3 PolygonArray<T3>::getSize(){
+int PolygonArray<T3>::getSize(){
     return tamanio;
 }
 
@@ -87,4 +86,4 @@ PolygonArray<T3>::~PolygonArray()
 }
 
 template class PolygonArray<int>;
-//template class PolygonArray<float>;
+template class PolygonArray<float>;

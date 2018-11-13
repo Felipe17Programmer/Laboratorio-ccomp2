@@ -9,22 +9,22 @@ class PolygonArray{
     public:
         PolygonArray();
         PolygonArray(PolygonArray &o);
-        PolygonArray(const Polygon<int> pts[],const T3 tamanio);
+        PolygonArray(const Polygon<T3> pts[],const int tamanio);
         ~PolygonArray();
 
         void print();
-        T3 getSize();
+        int getSize();
 		void clear();
-		void push_back(const Polygon<int> &p);
-		void insert(const T3, const Polygon<int> &p);
-		void remove(const T3);
+		void push_back(const Polygon<T3> &p);
+		void insert(const int, const Polygon<T3> &p);
+		void remove(const int);
 
 
     private:
-        T3 tamanio;
+        int tamanio;
         Polygon<T3> *points;
-        void resize(T3);
-        //int resize1(int newSize);
+        void resize(int);
+
 };
 
 #endif // POLYGONARRAY_H
