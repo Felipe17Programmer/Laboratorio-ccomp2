@@ -1,0 +1,117 @@
+# depslib dependency file v1.0
+1540390464 source:c:\users\alumno-e\desktop\24-10-18\clase anterior\src\point.cpp
+	"Point.h"
+	<iostream>
+
+1540389735 c:\users\alumno-e\desktop\24-10-18\clase anterior\include\point.h
+	<math.h>
+
+1540389553 source:c:\users\alumno-e\desktop\24-10-18\clase anterior\src\vector.cpp
+	"Vector.h"
+	<iostream>
+	<math.h>
+
+1540389553 c:\users\alumno-e\desktop\24-10-18\clase anterior\include\vector.h
+	"Point.h"
+
+1540391930 source:c:\users\alumno-e\desktop\24-10-18\clase anterior\main.cpp
+	<iostream>
+	"Point.h"
+	"Vector.h"
+	"Point array.h"
+
+1540391387 source:c:\users\alumno-e\desktop\24-10-18\clase anterior\src\point array.cpp
+	"Point array.h"
+	"Point.h"
+
+1540392949 c:\users\alumno-e\desktop\24-10-18\clase anterior\include\point array.h
+	"Point.h"
+
+1540418498 source:c:\users\usuario\desktop\aver\main.cpp
+	<iostream>
+	"Point.h"
+	"Vector.h"
+	"Point array.h"
+
+1540418498 c:\users\usuario\desktop\aver\include\point.h
+	<math.h>
+
+1540418498 c:\users\usuario\desktop\aver\include\vector.h
+	"Point.h"
+
+1540418498 c:\users\usuario\desktop\aver\include\point array.h
+	"Point.h"
+
+1540418498 source:c:\users\usuario\desktop\aver\src\point array.cpp
+	"Point array.h"
+	"Point.h"
+	<iostream>
+
+1540418498 source:c:\users\usuario\desktop\aver\src\point.cpp
+	"Point.h"
+	<iostream>
+
+1540418498 source:c:\users\usuario\desktop\aver\src\vector.cpp
+	"Vector.h"
+	<iostream>
+	<math.h>
+
+1542106300 source:g:\puntoarrays - copia\src\point array.cpp
+	"Point array.h"
+	"Point.h"
+	<iostream>
+
+1542106310 g:\puntoarrays - copia\include\point array.h
+	"Point.h"
+
+1542106300 g:\puntoarrays - copia\include\point.h
+	<math.h>
+
+1542106300 source:g:\puntoarrays - copia\src\point.cpp
+	"Point.h"
+	<iostream>
+
+1542106334 source:g:\puntoarrays - copia\main.cpp
+	<iostream>
+	"Point.h"
+	"Vector.h"
+	"Point array.h"
+
+1542106320 g:\puntoarrays - copia\include\vector.h
+	"Point.h"
+
+1542106352 source:g:\puntoarrays - copia\src\vector.cpp
+	"Vector.h"
+	<iostream>
+	<math.h>
+
+1542108990 source:g:\laboratorio\con templates\puntoarrays - copia\main.cpp
+	<iostream>
+	<stdlib.h>
+	"Point.h"
+	"Vector.h"
+	"Point array.h"
+
+1542107882 g:\laboratorio\con templates\puntoarrays - copia\include\point.h
+	<math.h>
+
+1542107744 g:\laboratorio\con templates\puntoarrays - copia\include\vector.h
+	"Point.h"
+
+1542108960 g:\laboratorio\con templates\puntoarrays - copia\include\point array.h
+	"Point.h"
+
+1542109016 source:g:\laboratorio\con templates\puntoarrays - copia\src\point array.cpp
+	"Point array.h"
+	"Point.h"
+	<iostream>
+
+1542108326 source:g:\laboratorio\con templates\puntoarrays - copia\src\point.cpp
+	"Point.h"
+	<iostream>
+
+1542108368 source:g:\laboratorio\con templates\puntoarrays - copia\src\vector.cpp
+	"Vector.h"
+	<iostream>
+	<math.h>
+

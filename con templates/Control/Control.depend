@@ -1,0 +1,124 @@
+# depslib dependency file v1.0
+1541513446 source:c:\users\alumno-g\desktop\control\src\polygon.cpp
+	"Polygon.h"
+	<iostream>
+
+1541512515 c:\users\alumno-g\desktop\control\include\polygon.h
+
+1541516483 source:c:\users\alumno-g\desktop\control\main.cpp
+	<iostream>
+	"Polygon.h"
+	"Rectagle.h"
+	"Triangle.h"
+	"Polygon_noabs.h"
+
+1541515662 c:\users\alumno-g\desktop\control\include\rectagle.h
+	"Polygon.h"
+	"Polygon_noabs.h"
+	<iostream>
+
+1541515662 c:\users\alumno-g\desktop\control\include\triangle.h
+	"Polygon.h"
+	"Polygon_noabs.h"
+	<iostream>
+
+1541515662 source:c:\users\alumno-g\desktop\control\src\rectagle.cpp
+	"Rectagle.h"
+	<iostream>
+
+1541516230 source:c:\users\alumno-g\desktop\control\src\triangle.cpp
+	"Triangle.h"
+	<iostream>
+
+1541516170 c:\users\alumno-g\desktop\control\include\polygon_noabs.h
+	<iostream>
+
+1541516151 source:c:\users\alumno-g\desktop\control\src\polygon_noabs.cpp
+	"Polygon_noabs.h"
+	<iostream>
+
+1541516571 source:c:\users\alumno-g\desktop\control\src\polygonarray.cpp
+	"Polygonarray.h"
+
+1541516571 c:\users\alumno-g\desktop\control\include\polygonarray.h
+
+1542103506 source:g:\control\main.cpp
+	<iostream>
+	"Polygon.h"
+	"Triangle.h"
+	"Polygonarray.h"
+
+1542102058 g:\control\include\polygon.h
+
+1542103090 g:\control\include\rectagle.h
+	"Polygon.h"
+	<iostream>
+
+1541586056 g:\control\include\polygon_noabs.h
+	<iostream>
+
+1542104622 g:\control\include\triangle.h
+	"Polygon.h"
+	<iostream>
+
+1542102088 source:g:\control\src\polygon.cpp
+	"Polygon.h"
+	<iostream>
+
+1541586070 source:g:\control\src\polygon_noabs.cpp
+	"Polygon_noabs.h"
+	<iostream>
+
+1542099804 source:g:\control\src\rectagle.cpp
+	"Rectagle.h"
+	<iostream>
+
+1542099804 source:g:\control\src\triangle.cpp
+	"Triangle.h"
+	<iostream>
+
+1542104144 g:\control\include\polygonarray.h
+	"Polygon.h"
+	<iostream>
+
+1542104144 source:g:\control\src\polygonarray.cpp
+	"PolygonArray.h"
+	<iostream>
+
+1542109464 source:g:\laboratorio\con templates\control\main.cpp
+	<iostream>
+	"Polygon.h"
+	"Triangle.h"
+	"Polygonarray.h"
+
+1542102058 g:\laboratorio\con templates\control\include\polygon.h
+
+1542116608 g:\laboratorio\con templates\control\include\triangle.h
+	"Polygon.h"
+	<iostream>
+
+1542116700 g:\laboratorio\con templates\control\include\polygonarray.h
+	"Polygon.h"
+	<iostream>
+
+1542109232 source:g:\laboratorio\con templates\control\src\polygon.cpp
+	"Polygon.h"
+	<iostream>
+
+1542116760 source:g:\laboratorio\con templates\control\src\polygonarray.cpp
+	"PolygonArray.h"
+	<iostream>
+
+1542116590 source:g:\laboratorio\con templates\control\src\rectagle.cpp
+	"Rectagle.h"
+	"Polygon.h"
+	<iostream>
+
+1542116582 g:\laboratorio\con templates\control\include\rectagle.h
+	"Polygon.h"
+	<iostream>
+
+1542116600 source:g:\laboratorio\con templates\control\src\triangle.cpp
+	"Triangle.h"
+	<iostream>
+
